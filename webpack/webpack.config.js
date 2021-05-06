@@ -63,11 +63,11 @@ module.exports = (options) => {
         }]
     },
     plugins: [
-      new WebpackVersionFilePlugin({
-        packageFile: Path.join(__dirname, '../package.json'),
-        template: Path.join(__dirname, '../version.ejs'),
-        outputFile: Path.join(__dirname, '../static/version.json')
-      }),
+      // new WebpackVersionFilePlugin({
+      //   packageFile: Path.join(__dirname, '../package.json'),
+      //   template: Path.join(__dirname, '../version.ejs'),
+      //   outputFile: Path.join(__dirname, '../static/version.json')
+      // }),
       new Webpack.DefinePlugin({
         'process.env': {
           NODE_ENV: JSON.stringify(options.isProduction

@@ -3,6 +3,5 @@
 /functions
 /.idea
 .DS_Store
-.env
 bundle.js
 npm-debug.log
