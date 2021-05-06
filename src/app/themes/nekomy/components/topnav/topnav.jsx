@@ -179,7 +179,7 @@ class TopNav extends Component {
                 : <Icon glyph={Calendar} className="icon calendar" />}
             </button>
             : ''}
-
+          { console.log(this.props.user)}
           {(this.props.user)
             ? <button
               className="top-nav-item" onClick={() => {

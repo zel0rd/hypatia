@@ -54,6 +54,10 @@ class App extends Component {
     this.props.changeViewport(isDesktop);
   }
 
+  onClickTest() {
+    alert("test")
+  }
+
   render() {
     let title;
 
@@ -76,7 +80,7 @@ class App extends Component {
     return (
       <div>
         <Helmet title={String(title)} />
-
+        <button className="login-test" onClick={this.onClickTest}>로그인 테스트</button>
         <div className="main js-main">
           <Loader />
           <Notification />
